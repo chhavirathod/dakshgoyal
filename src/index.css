@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-gray-900 text-gray-100;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* glass component used in About.jsx */
+  .glass {
+    /* use Tailwind utilities via @apply instead of relying on a missing `border-border` class */
+    @apply bg-white/5 border border-gray-700/40 backdrop-blur rounded-2xl p-4;
+  }
+}
+
+@layer utilities {
+  /* fallback utility in case other files use `border-border` via @apply */
+  .border-border {
+    /* sets the border color; callers should still include `border` if needed */
+    @apply border-gray-700/40;
+  }
+  
+  .glass-strong {
+    @apply bg-white/20 backdrop-blur-lg border border-white/30;
+  }
+}
+
