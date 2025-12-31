@@ -3,7 +3,7 @@ const Experience = () => {
     {
       title: 'Events Head',
       organization: 'DJS Google Developer Groups',
-      duration: 'Duration: September 2025 - Present',
+      duration: 'Duration: October 2025 - Present',
       responsibilities: [
         'Leading and organizing technical events and workshops',
         'Managing community engagement and developer relations',
@@ -13,7 +13,7 @@ const Experience = () => {
     {
       title: 'Autonomous Co-committee',
       organization: 'DJS Racing',
-      duration: 'Duration: August 2024 - Present',
+      duration: 'Duration: April 2024 - Present',
       responsibilities: [
         'Contributing to autonomous vehicle development projects',
         'Collaborating on technical solutions for racing systems',
