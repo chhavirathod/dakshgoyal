@@ -7,10 +7,14 @@ import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import CustomCursor from "./components/CustomCursor";
+
 
 function App() {
   return (
+
     <div className="min-h-screen bg-gray-900">
+      <CustomCursor />
       <Navbar />
       <main>
         <Hero />

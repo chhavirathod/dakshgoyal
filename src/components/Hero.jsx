@@ -28,7 +28,7 @@ const Hero = () => {
         style={{ width: '100%', height: '100%' }}
       >
         <LiquidEther
-          colors={[ '#5227FF', '#FF9FFC', '#B19EEF' ]}
+          colors={['#5227FF', '#FF9FFC', '#B19EEF']}
           mouseForce={20}
           cursorSize={100}
           isViscous={false}
@@ -61,15 +61,16 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
+            
             <button
               onClick={scrollToProjects}
-              className="px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
+              className="cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
             >
               View Projects
             </button>
             <button
               onClick={downloadResume}
-              className="px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
+              className="cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
             >
               Download Resume
             </button>
