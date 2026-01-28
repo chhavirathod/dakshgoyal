@@ -53,6 +53,7 @@ body {
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
+  transition: mix-blend-mode 0.3s ease;
 }
 
 .cursor-follower {
@@ -64,5 +65,14 @@ body {
   pointer-events: none;
   z-index: 9998;
   mix-blend-mode: difference;
+  transition: mix-blend-mode 0.3s ease;
+}
+
+.cursor.cursor-normal {
+  mix-blend-mode: normal;
+}
+
+.cursor-follower.cursor-follower-normal {
+  mix-blend-mode: normal;
 }
 

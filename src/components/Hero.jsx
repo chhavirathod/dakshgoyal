@@ -49,11 +49,11 @@ const Hero = () => {
       {/* Content container — keep above the background with z-10 */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold pb-4 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
+          <h1 className="text-5xl md:text-7xl font-bold pb-7 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
             Daksh Goyal here,
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-gray-200">
-            Data Analyst | Data Science Engineer
+          <h2 className="text-2xl md:text-3xl font-semibold mb-7 text-gray-200">
+            Data Analyst | Machine Learning Engineer
           </h2>
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Turning data into insights using analytics, ML, and scalable systems
