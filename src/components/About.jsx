@@ -2,7 +2,7 @@ import profileImg from '../assets/profile.jpg';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="about" className="reveal py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           About Me
@@ -11,7 +11,7 @@ const About = () => {
           {/* changed: layout now places image on the left and text on the right */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             {/* left: photo — full width on small screens, 40% width on md+ */}
-            <div className="w-full md:w-1/4 flex-shrink-0 profile-image-container">
+            <div className="reveal-child w-full md:w-1/4 flex-shrink-0 profile-image-container">
               <img
                 src={profileImg}
                 alt="Daksh Goyal"
@@ -19,7 +19,7 @@ const About = () => {
               />
             </div>
             {/* right: text content */}
-            <div className="space-y-6 text-gray-300 leading-relaxed">
+            <div className="reveal-child space-y-6 text-gray-300 leading-relaxed">
               <p className="text-lg">
                 I'm a <span className="text-white font-semibold">B.Tech Computer Science Engineering (Data Science)</span> student
                 at <span className="text-white font-semibold">DJ Sanghvi College of Engineering</span>, maintaining a

@@ -8,4 +8,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+// Scroll reveal initialization moved into App component to ensure it runs
+// after React has mounted and the DOM is stable.
 

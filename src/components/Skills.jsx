@@ -23,7 +23,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="reveal py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Technical Skills
@@ -32,7 +32,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-6 md:p-8 hover:glass-strong transition-all duration-300"
+              className="reveal-child glass rounded-2xl p-6 md:p-8 hover:glass-strong transition-all duration-300"
             >
               <h3 className="text-xl md:text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <svg

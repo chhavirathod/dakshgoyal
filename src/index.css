@@ -76,3 +76,46 @@ body {
   mix-blend-mode: normal;
 }
 
+/* Scroll reveal: elements slide up and fade in as they enter viewport
+   Only hide elements when JavaScript is enabled (documentElement.has-js).
+   This ensures content remains visible if JS fails or is disabled. */
+.has-js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 700ms cubic-bezier(.2,.9,.2,1), transform 700ms cubic-bezier(.2,.9,.2,1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-js .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+/* reveal-child: used for items inside a reveal container to animate with a stagger
+   Only hide children when JS is enabled via .has-js so content stays visible if JS fails. */
+.has-js .reveal-child {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 560ms cubic-bezier(.2,.9,.2,1), transform 560ms cubic-bezier(.2,.9,.2,1);
+  will-change: opacity, transform;
+}
+.reveal-child.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .has-js .reveal-child {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+

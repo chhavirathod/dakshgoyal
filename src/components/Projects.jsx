@@ -24,7 +24,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+    <section id="projects" className="reveal py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Projects
@@ -33,7 +33,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-6 md:p-8 hover:glass-strong transition-all duration-300 transform hover:scale-105 flex flex-col"
+              className="reveal-child glass rounded-2xl p-6 md:p-8 hover:glass-strong transition-all duration-300 transform hover:scale-105 flex flex-col"
             >
               <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
               <p className="text-gray-300 mb-6 flex-grow leading-relaxed">

@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
+    <section id="contact" className="reveal py-20 px-4 sm:px-6 lg:px-8 bg-gray-800/50">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Get In Touch
@@ -10,7 +10,7 @@ const Contact = () => {
             {/* Email */}
             <a
               href="mailto:dakshgoyal990@gmail.com"
-              className="flex items-center gap-4 p-6 glass-strong rounded-xl hover:bg-white/30 transition-all duration-300 group"
+              className="reveal-child flex items-center gap-4 p-6 glass-strong rounded-xl hover:bg-white/30 transition-all duration-300 group"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <svg
@@ -34,7 +34,7 @@ const Contact = () => {
             </a>
 
             {/* Location */}
-            <div className="flex items-center gap-4 p-6 glass-strong rounded-xl">
+            <div className="reveal-child flex items-center gap-4 p-6 glass-strong rounded-xl">
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
                 <svg
                   className="w-6 h-6 text-white"
@@ -69,7 +69,7 @@ const Contact = () => {
               href="https://github.com/Daksh159"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full glass-strong flex items-center justify-center hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
+              className="reveal-child w-14 h-14 rounded-full glass-strong flex items-center justify-center hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
               aria-label="GitHub"
             >
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/daksh-goyal-975829282/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-14 h-14 rounded-full glass-strong flex items-center justify-center hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
+              className="reveal-child w-14 h-14 rounded-full glass-strong flex items-center justify-center hover:bg-white/30 transition-all duration-300 transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">

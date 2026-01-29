@@ -20,7 +20,7 @@ const Hero = () => {
     <section
       id="home"
       ref={heroRef}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="reveal relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* LiquidEther background: placed as an absolute sibling so it stays behind content */}
       <div
@@ -48,7 +48,7 @@ const Hero = () => {
 
       {/* Content container — keep above the background with z-10 */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto animate-fade-in">
+        <div className="max-w-4xl mx-auto animate-fade-in reveal-child">
           <h1 className="text-5xl md:text-7xl font-bold pb-7 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent">
             Daksh Goyal here,
           </h1>
@@ -64,13 +64,13 @@ const Hero = () => {
             
             <button
               onClick={scrollToProjects}
-              className="cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
+              className="reveal-child cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
             >
               View Projects
             </button>
             <button
               onClick={downloadResume}
-              className="cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
+              className="reveal-child cursor-target px-6 py-3 glass-strong rounded-lg font-semibold text-white hover:bg-white/30 transition-all duration-300 transform hover:scale-105"
             >
               Download Resume
             </button>

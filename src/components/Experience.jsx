@@ -23,14 +23,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="experience" className="reveal py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Positions of Responsibility
         </h2>
         <div className="space-y-8">
           {positions.map((position, index) => (
-            <div key={index} className="glass rounded-2xl p-8 md:p-10">
+            <div key={index} className="reveal-child glass rounded-2xl p-8 md:p-10">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
