@@ -13,7 +13,7 @@ const Hero = () => {
 
   const downloadResume = () => {
     // Placeholder - user can add their resume file
-    window.open('#', '_blank');
+    window.open('https://drive.google.com/file/d/1B5Xbhh6ORgCq07_DRc2516lPXMhamg4f/view?usp=sharing', '_blank');
   };
 
   return (
